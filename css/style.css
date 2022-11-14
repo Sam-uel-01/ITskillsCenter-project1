@@ -1,0 +1,49 @@
+main {
+  background-color: #fff;
+  margin: 0px;
+  /* height: 100vh; */
+}
+header {
+  padding: 10px 100px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLogo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.subLogo {
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+.banner {
+  height: 450px;
+  background-color: #5f9dd8;
+}
+
+.actionContent {
+  padding: 3% 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  height: 250px;
+  background-color: #5f9dd8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footerContent {
+  border: 2px white solid;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
