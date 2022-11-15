@@ -1,15 +1,16 @@
+html,
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 main {
   background-color: #fff;
   margin: 0px;
   /* height: 100vh; */
 }
+
+/* Heading Section */
 header {
   padding: 10px 100px;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
 }
 
 .mainLogo {
@@ -19,22 +20,81 @@ header {
 
 .subLogo {
   font-size: 10px;
-  margin-left: 15px;
+  margin-left: 8px;
 }
 
+/* Banner Section */
 .banner {
-  height: 450px;
   background-color: #5f9dd8;
+  padding: 50px 0px;
 }
 
+.bannerMain {
+  display: flex;
+}
+
+.bannerMain .bannerImage {
+  flex: 1;
+  text-align: left;
+}
+
+.bannerMain .bannerText {
+  text-align: right;
+  flex: 1;
+  padding: 100px 0px;
+  padding-right: 25px;
+  color: #fff;
+}
+
+.bannerImage > img {
+  width: 350px;
+  height: 100%;
+}
+
+.bannerText h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.bannerText p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.hr__Banner {
+  border: 1px solid #fff;
+  background-color: #fff;
+  width: 55%;
+  margin-left: 45%;
+}
+
+.bannerText a {
+  text-decoration: none;
+  color: #5f9dd8;
+  background-color: #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Call to Action Section */
 .actionContent {
-  padding: 3% 25%;
+  padding: 50px 25%;
   margin: 0 auto;
   text-align: center;
 }
 
+.cta__button {
+  color: #5f9dd8;
+  text-transform: uppercase;
+  border: 1px solid #5f9dd8;
+  padding: 5px 35px;
+}
+
+/* Footer Section */
+
 footer {
-  height: 250px;
+  padding: 50px 20px;
   background-color: #5f9dd8;
   display: flex;
   align-items: center;
@@ -46,4 +106,51 @@ footer {
   height: 150px;
   width: 150px;
   border-radius: 50%;
+  margin: 0 auto;
+}
+.comeText,
+.makeText,
+.perfectText {
+  color: white;
+  text-align: center;
+}
+
+.hr__footer {
+  border: 1px solid #fff;
+  width: 30%;
+}
+
+@media (max-width: 720px) {
+  /* Header */
+  .mainLogo {
+    text-align: center;
+  }
+  .subLogo {
+    text-align: center;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 10px 0px;
+  }
+  .bannerMain .bannerImage {
+    display: none;
+  }
+  .bannerMain .bannerText {
+    text-align: center;
+    padding: 100px 0px;
+  }
+  .hr__Banner {
+    margin: 0 auto;
+  }
+
+  /* Call to action */
+  .actionContent {
+    padding: 50px 5%;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+  }
 }
