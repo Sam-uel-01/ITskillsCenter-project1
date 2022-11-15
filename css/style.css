@@ -133,9 +133,9 @@ footer {
   .banner {
     padding: 10px 0px;
   }
-  .bannerMain .bannerImage {
+  /* .bannerMain .bannerImage {
     display: none;
-  }
+  } */
   .bannerMain .bannerText {
     text-align: center;
     padding: 100px 0px;
